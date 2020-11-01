@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    background-color: #CCC
+}
+
+nav {
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+nav .container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+nav .container > ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .container > ul > li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav .container > ul > li a{
+    display: block;
+    height: 3rem;
+    line-height: 3rem;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s
+}
+
+nav .container ul > li > a:hover {
+    background-color: #426fc0;
+}
+
+.dropdown{
+    position: absolute;
+    padding: 2rem;
+    top: 3.1rem;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: ;
+    pointer-events: none;
+    transition: .3s;
+    opacity: 0;
+}
+
+nav .container > ul > li:hover .dropdown {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.dropdown > div {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.dropdown  h4 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.dropdown ul li {
+    list-style: none;
+    font-size: 1.1rem;
+    margin-top: .5rem
+}
+
+.dropdown .cy_img {
+    height: 200px;
+    width: 90%;
+    background: url(bg.jpg) no-repeat center / 100% 100%;
+}
